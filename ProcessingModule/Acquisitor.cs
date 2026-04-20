@@ -85,7 +85,7 @@ namespace ProcessingModule
                     stateUpdater.LogMessage(ex.Message);
                 }
 
-                acquisitionTrigger.WaitOne(1000);
+                Thread.Sleep(1000);
             }
         }
 
